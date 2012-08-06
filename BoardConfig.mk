@@ -18,7 +18,7 @@ BOARD_USES_GENERIC_AUDIO := false
 USE_CAMERA_STUB := false
 
 # inherit from the proprietary version
--include vendor/asus/tf201/BoardConfigVendor.mk
+-include vendor/asus/tf700/BoardConfigVendor.mk
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -42,7 +42,7 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE :=
 
 # EGL settings
-BOARD_EGL_CFG := device/asus/tf201/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/asus/tf700/prebuilt/egl.cfg
 USE_OPENGL_RENDERER := true
 
 # Misc display settings
@@ -78,18 +78,18 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 29850022707
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/asus/tf201
+TARGET_KERNEL_SOURCE := kernel/asus/tf700
 TARGET_KERNEL_CONFIG := tegra3_android_defconfig
 
 # Prebuilt Kernel Fallback
-TARGET_PREBUILT_KERNEL := device/asus/tf201/kernel
+TARGET_PREBUILT_KERNEL := device/asus/tf700/kernel
 
 # Coustom Tools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf201/releasetools/tf201_ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf201/releasetools/tf700_ota_from_target_files
 
 # Recovery Options
-BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf201/recovery/recovery.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf700/recovery/recovery.mk
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_INITRC := device/asus/tf201/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/asus/tf700/recovery/init.rc
 BOARD_HAS_SDCARD_INTERNAL := true
