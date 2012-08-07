@@ -85,7 +85,7 @@ TARGET_KERNEL_CONFIG := tegra3_android_defconfig
 TARGET_PREBUILT_KERNEL := device/asus/tf700/kernel
 
 # Coustom Tools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf201/releasetools/tf700_ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf700/releasetools/tf201_ota_from_target_files
 
 # Recovery Options
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/tf700/recovery/recovery.mk
